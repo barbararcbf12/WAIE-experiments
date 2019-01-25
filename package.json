@@ -1,0 +1,48 @@
+{
+  "name": "firstApp",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest": "^23.5.0",
+    "jest-react-native": "^18.0.0",
+    "react-test-renderer": "16.3.1"
+  },
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest",
+    "postinstall": "sed -i '' '/Google.*\\.[h|m]/d' node_modules/react-native-maps/lib/ios/AirMaps.xcodeproj/project.pbxproj"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "dependencies": {
+    "d3-shape": "^1.2.2",
+    "date-fns": "^1.29.0",
+    "firebase": "^5.5.4",
+    "firebase-tools": "^5.1.1",
+    "interactjs": "^1.3.4",
+    "moment": "^2.22.2",
+    "react": "16.3.1",
+    "react-calendar-timeline": "^0.20.0",
+    "react-native": "~0.55.2",
+    "react-native-datepicker": "^1.7.2",
+    "react-native-firebase": "^5.1.1",
+    "react-native-image-picker": "^0.27.1",
+    "react-native-maps": "^0.21.0",
+    "react-native-navigation": "^1.1.487",
+    "react-native-notifications": "^1.1.23",
+    "react-native-push-notification": "^3.1.2",
+    "react-native-svg": "^8.0.10",
+    "react-native-svg-charts": "^5.2.0",
+    "react-native-vector-icons": "^5.0.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "uuid-v4": "^0.1.0",
+    "victory": "^30.5.1",
+    "victory-native": "^30.5.0"
+  }
+}
