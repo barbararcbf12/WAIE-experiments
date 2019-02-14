@@ -44,7 +44,7 @@ exports.storeImage = functions.https.onRequest((request, response) => {
             console.log(err);
             return response.status(500).json({ error: err });
         });
-        const bucket = gcs.bucket("waie-experiments-1539095380011.appspot.com");
+        const bucket = gcs.bucket("");
         const uuid = UUID();
 
         const idUser = decodedToken.localId;
